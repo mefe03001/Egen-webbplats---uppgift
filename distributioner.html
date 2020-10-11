@@ -1,0 +1,74 @@
+<!DOCTYPE html><!--Förklarar att sidan är i HTML5-->
+<html lang="sv"><!--början av HTML-dokumentet som även visar att språket på sidan är svenska, vilket är nödvändigt om någon ska använda ett uppläsningsverktyg-->
+	<head><!--början av taggen head, vilket är där all ickesynlig men väldigt nödvändig kod läggs för att sidan ska se ut och fungera som man vill-->
+		<meta charset="UTF-8"><!--Visar att sidan är i teckenkodningen UTF-8 för att tecken som är inte är i latinska alfabetet ska fungera, som t.ex. åäö-->
+		<title>Min sida om Linux - Distributioner</title><!--Säger till webbläsaren vad titeln i fliken ska vara-->
+		<link href="style.css" rel="stylesheet"><!--En länk till css-dokumentet vilket används för styling till sidan.-->
+		<link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/800px-NewTux.svg.png"/><!--Beskriver att en favicon ska användas till sidan, och var den finns.-->
+	</head><!--heads sluttagg-->
+	<body class="container"><!--Början av taggen body, där mycket av html-koden finns. class="container" beskriver att klassen container ska användas-->
+		<!--<header>, <nav>, <main>, och <footer> används för semantik på sidan-->
+		<header><!--starttagg för header, där sidhuvudet på sidan ska läggas-->
+			<h1>Min sida om Linux</h1><!--Heading 1 tagg för namn för alla sidorna-->
+			<h2>Distributioner</h2><!--Heading 2 tagg för namn för den sidan just nu befinner sig på-->
+		</header><!--sluttagg för header-->
+		<nav><!--starttagg för nav, där navigationslänkar på sidan ska läggas-->
+			<h2>Länkar på sidan</h2><!--Heading 2 tagg med idet center-->
+			<ul class="navGrid"><!--En punktlista med klassen navgrid-->
+				<li><a href="index.html">Startsida</a></li><!--listobjekt med länk till startsidan-->
+				<li><a href="om-linux.html">Om Linux</a></li><!--listobejekt med länk till om linux-->
+				<li><a href="distributioner.html">Distributioner</a></li><!--listobejekt med länk till distributioner-->
+			</ul><!--sluttagg för punktlista-->
+		</nav><!--sluttagg för navigering-->
+		<!--kod uppåt likadan på alla sidorna-->
+		<main><!--starttagg för main vilket är huvudinnehållet på sidan-->
+			<h2>De kändaste och mest inflytelserika distributionerna</h2><!--Heading 2 för rubrik om vad taggarna nedan kommer att handla om-->
+			<table class="omDistributionerna"><!--Starttagg för en tabell, som också beskriver att tabellen kommer att använda sig av klassen omDistributionerna-->
+				<tr><!--Ny tabellrad-->
+					<th>Namn</th><!--Tabellrubrik-->
+					<th>Första utgivningår</th><!--Tabellrubrik-->
+					<th>Forkad från annan distribution</th><!--Tabellrubrik-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr><!--Ny tabellrad-->
+					<td>Debian</td><!--Tabellbeskrivning-->
+					<td>1993</td><!--Tabellbeskrivning-->
+					<td>Nej</td><!--Tabellbeskrivning-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr><!--Ny tabellrad-->
+					<td>Slackware</td><!--Tabellbeskrivning-->
+					<td>1993</td><!--Tabellbeskrivning-->
+					<td>Softlanding Linux System (SLS)</td><!--Tabellbeskrivning-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr><!--Ny tabellrad-->
+					<td>Red Hat</td><!--Tabellbeskrivning-->
+					<td>1995</td><!--Tabellbeskrivning-->
+					<td>Nej</td><!--Tabellbeskrivning-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr><!--Ny tabellrad-->
+					<td>Ubuntu</td><!--Tabellbeskrivning-->
+					<td>2004</td><!--Tabellbeskrivning-->
+					<td>Debian</td><!--Tabellbeskrivning-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr><!--Ny tabellrad-->
+					<td>Android</td><!--Tabellbeskrivning-->
+					<td>2008</td><!--Tabellbeskrivning-->
+					<td>Nej</td><!--Tabellbeskrivning-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr><!--Ny tabellrad-->
+					<td>Arch Linux</td><!--Tabellbeskrivning-->
+					<td>2002</td><!--Tabellbeskrivning-->
+					<td>Nej</td><!--Tabellbeskrivning-->
+				</tr><!--Sluttagg för tabellrad-->
+				<tr>
+					<td>Linux Mint</td>
+					<td>2006</td>
+					<td>Ubuntu</td>
+				</tr>
+			</table><!--Sluttagg för tabellen-->
+		</main><!--sluttagg för main-->
+		<!--Kod nedåt är likadan på alla sidorna-->
+		<footer><!--starttagg för sidfot-->
+			<p>Melvin, TE19C</p><!--Paragraftagg med text i-->
+		</footer><!--sluttagg för sidfot-->
+	</body><!--bodys sluttagg-->
+</html><!--slutet av HTML-dokumentet-->

@@ -1,0 +1,39 @@
+<!DOCTYPE html><!--Förklarar att sidan är i HTML5-->
+<html lang="sv"><!--början av HTML-dokumentet som även visar att språket på sidan är svenska, vilket är nödvändigt om någon ska använda ett uppläsningsverktyg-->
+	<head><!--början av taggen head, vilket är där all ickesynlig men väldigt nödvändig kod läggs för att sidan ska se ut och fungera som man vill-->
+		<meta charset="UTF-8"><!--Visar att sidan är i teckenkodningen UTF-8 för att tecken som är inte är i latinska alfabetet ska fungera, som t.ex. åäö-->
+		<title>Min sida om Linux - Startsida</title><!--Säger till webbläsaren vad titeln i fliken ska vara-->
+		<link href="style.css" rel="stylesheet"><!--En länk till css-dokumentet vilket används för styling till sidan.-->
+		<link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/800px-NewTux.svg.png"/><!--Beskriver att en favicon ska användas till sidan, och var den finns.-->
+	</head><!--heads sluttagg-->
+	<body class="container"><!--Början av taggen body, där mycket av html-koden finns. class="container" beskriver att klassen container ska användas-->
+		<!--<header>, <nav>, <main>, och <footer> används för semantik på sidan-->
+		<header><!--starttagg för header, där sidhuvudet på sidan ska läggas-->
+			<h1>Min sida om Linux</h1><!--Heading 1 tagg för namn för alla sidorna-->
+			<h2>Startsida</h2><!--Heading 2 tagg för namn för den sidan just nu befinner sig på-->
+		</header><!--sluttagg för header-->
+		<nav><!--starttagg för nav, där navigationslänkar på sidan ska läggas-->
+			<h2>Länkar på sidan</h2><!--Heading 2 tagg med idet center-->
+			<ul class="navGrid"><!--En punktlista med klassen navgrid-->
+				<li><a href="index.html">Startsida</a></li><!--listobjekt med länk till startsidan-->
+				<li><a href="om-linux.html">Om Linux</a></li><!--listobejekt med länk till om linux-->
+				<li><a href="distributioner.html">Distributioner</a></li><!--listobejekt med länk till distributioner-->
+			</ul><!--sluttagg för punktlista-->
+		</nav><!--sluttagg för navigering-->
+		<!--kod uppåt nästan likadan på alla sidorna-->
+		<main><!--starttagg för main vilket är huvudinnehållet på sidan-->
+			<h2>Det här är en sida om Linux</h2><!--Heading 2 för rubrik om vad underliggande taggar kommer att handla om-->
+			<p>På länkarna ovan kan du läsa lite om Linux i allmänhet, och vissa distributioner.</p><!--Paragraftagg med text i-->
+			<p>Den här sidan visar bara toppen av Linux-isberget. För mer läsning om Linux finns länk nedan:</p><!--Paragraftagg med text i-->
+			<a href=https://sv.wikipedia.org/wiki/Linux title="Tryck för att komma till Svenska Wikipedia-sidan för Linux">Svenska Wikipedia-sidan för Linux</a><!--Tryckbar länk till svenska wikipediasidan för linux-->
+			<p>Nedan finns en bild på den klassiska Linux pingvinen som är Linux logga. Klicka på bilden för att komma till Linux Foundations webbsida</p><!--Paragrafftagg med text i-->
+			<a href="https://www.linuxfoundation.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/800px-NewTux.svg.png" title="Bild på Linux pingvinen. Klicka på bilden för att komma till Linux Foundations webbsida." alt="Bild på Linux pingvinen. Klicka på bilden för att komma till Linux Foundations webbsida."></a><!--Bild med länk i om man trycker. Title används för att visa en beskrivning om man håller över bilden/länken. Alt används för att beskriva vad bilden handlar om ifall inte bilden är tillgänglig, eller om man använder ett uppläsningsverktyg.-->
+			<p>Nedan finns en bild på Linus Torvall, som är skaparen av första Linux-kärnan</p><!--Paragraftagg med text i-->
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Linus_Torvalds.jpeg" title="Bild på Linus Torvall" alt="Bild på Linus Torvall"><!--Länk till bild som visas på sidan. Title används för att beskriva bilden om man bara håller över den. Alt används för att beskriva bilden om den inte är tillgänglig, det används också för att beskriva en bild om man använder ett uppläsningverktyg-->
+		</main><!--sluttagg för main-->
+		<!--Kod nedåt är likadan på alla sidorna-->
+		<footer><!--starttagg för sidfot-->
+			<p>Melvin, TE19C</p><!--Paragraftagg med text i-->
+		</footer><!--sluttagg för sidfot-->
+	</body><!--bodys sluttagg-->
+</html><!--slutet av HTML-dokumentet-->

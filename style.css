@@ -1,0 +1,84 @@
+/* Det som kommer innan klammerparenteserna ({}) är det som påverkar vad det som är inom Klammerparenteserna verkar på. */
+
+body{/* Koden här tillämpas på body, på alla sidor som använder style.css */
+	background-color: black;/* bakgrundsfärgen på alla sidor kommer att vara svart */
+}
+.container {/* En klass som heter container, som huvudsakligen är gjord för grid. */
+	display: grid; /* Visar webbläsaren att klassen kommer att använda en grid. */
+	grid-template-columns: 1fr 5fr 1fr;/* Visar att det kommer att det kommer att finnas tre griddar på bredden, den första 1fr, den andra 5fr, och den tredje 1fr. */
+	grid-template-rows: auto;/* Visar för webbläsaren att det inte finns någon begränsning på hur stora eller hur många griddar griddar det kan vara på höjden. */
+	grid-gap: 10px;/* Visar för webbläsaren att det ska vara ett mellanrum på 10 pixlar mellan griddarna för webbläsaren */
+	color: white;/* Visar att textfärgen ska vara vit på allting som klassen container verkar på. */
+}
+
+header,nav,main,footer {/* en gruppselektor som verkar på header, nav, main, footer */
+	border: 2px solid white;/* Visar för webbläsaren att det ska finnas en kant som är solid och 2px bred */
+	padding: 10px;/* Visar för webbläsaren att det ska vara ett mellanrum på 10px från allting i rutorna till ytterkanten i gridrutorna */
+	border-radius: 25px;/* Visar för webbläsaren att att det ska vara rundade hörn på griddarna, och att avrundningen ska börja 25px innan yttersta delen av kanten */
+}
+header {/* typselektor för header */
+	grid-column: 2;/* Visar för webbläsaren att headergridden ska ligga på plats nummer 2 på bredden */
+	grid-row: 1;/* Visar för webbläsaren att headergridden ska ligga på plats nummer 1 från toppen */
+	background-color: gray;/* Visar att webbläsaren att bakgrundsfärgen på header ska vara grå */
+	text-align: center;/* Visar för webbläsaren att texten ska vara centrerad */
+}
+
+nav {/* typselektor för nav */
+	grid-column: 2;/* Visar för webbläsaren att navgridden ska ligga på plats nummer 2 på bredden */
+	grid-row: 2;/* Visar för webbläsaren att navgridden ska ligga på plats nummer 2 från toppen */
+	background-color: gray;/* Visar för webbläsaren att bakgrundsfärgen på nav ska vara grå */
+	text-align: center;/* Visar för webbläsaren att texten ska vara centrerad */
+}
+.navGrid {/* En klass som heter navGrid, som används för navigationsmenyn  */
+	display: grid;/* Visar för webbläsaren att klassen kommer att använda en grid. */
+	grid-template-columns: 1fr 1fr 1fr;/* Visar för webbläsaren att det kommer att finnas tre griddar på bredden, där alla tre är lika stora 1fr */
+	grid-template-rows: auto;/* Visar för webbläsaren att höjden inte behöver vara högre än vad det som finns i griddarna, och att det inte finns någon begränsning på hur många på höjden den kan vara. */
+	font-size: 200%;/* Visar för webbläsaren att font storleken ska vara 200% av vad den vanligen är */
+	list-style: none;/* Visar för webbläsaren att listobjekten inte ska ha några punkter */
+	text-align: center;/* Visar för webbläsaren att listobjekten ska vara centrerade */
+	margin: 0;/* Visar för webbläsaren att listobjekten inte måste ha något område omkring sig */
+	padding: 0;/* Visar för webbläsaren att listobjekt inte måste ha något område inom sig */
+}
+nav>ul>li>a:hover {/* Barnselektor som visar att nav ligger över ul, som i sin tur ligger över a, även en psudoklass som förklarar att något ska hända om man håller över en av länkarna i naven */
+	background-color: black;/* Visar för webbläsaren att det ska bli svart om man håller över en av länkarna */
+}
+nav>ul>li>a {/* Barnselektor som visar att något ska hända med länkar som är i först li, sen ul, och sist nav */
+	text-decoration: none;/* Visar att länken inte ska ha någon dekoration */
+	color: white;/* Visar att länkens färg ska vara vit */
+}
+
+main {/* Typselektor för main */
+	grid-column: 2;/* Visar för webbläsaren att maingridden ska ligga på plats nummer 2 på bredden */
+	grid-row: 3;/* Visar för webbläsaren att maingridden ska ligga på plats nummer 3 från toppen */
+	background-color: gray;/* Visar för webbläsaren att bakgrundsfärgen på main ska vara grå */
+}
+main img {/* Avkomlingsselektor som visar att bilder som ligger i main ska få: */
+	width: 200px;/* en maxbredd på 200px */
+}
+main>a{/* Barnselektor för länkar i main */
+	color: blue;/* Visar att färgen ska vara blå */
+}
+
+footer {/* Typselektor för footer */
+	grid-column: 2;/* Visar för webbläsaren att footergridden ska ligga på plats nummer 2 på bredden */
+	grid-row: 4;/* Visar för webbläsaren att footergridden ska ligga på plats nummer 4 från toppen */
+	background-color: gray;/* Visar för webbläsaren att bakgrundfärgen på footer ska vara grå */
+}
+table.omDistributionerna{/* typselektor för table och klasselektor för omDistributionerna */
+	border-collapse: collapse;/* Visar att det inte ska vara något mellanrum mellan tabellerna */
+}
+table, td, th, .omDistributionerna{/* gruppselektorer för  table, td och th även en klasselektor för omDistributionerna */
+	border: 2px solid blue;/* Visar att ramen för tabellen ska vara 2 pixlar solid blå */
+	padding: 10px;/* avståndet mellan texten och ramen ska vara 10pixlar */
+}
+.omDistributionerna tr:nth-child(even){/* klasselektor för omDistributionerna, typselektor för tr, och psudoklassselektor för nth-child som gäller på alla jämna rader, så länge inget annat gäller för en speciell rad */
+	background-color: yellow;/* Visar att bakgrundfärgen ska vara gul */
+	color: red;/* Visar att textfärgen ska vara röd */
+}
+.omDistributionerna tr:nth-child(odd){/* klasselektor för omDistributionerna, typselektor för tr, och psudoklassselektor för nth-child som gäller på alla ojämna rader, så länge inget annat gäller för en speciell rad */
+	background-color: red;/* Visar att bakgrundsfärgen ska vara röd */
+	color: yellow;/* Visar att textfärgen ska vara gul */
+}
+.omDistributionerna tr:nth-child(1){/* klasselektor för omDistributionerna, typselektor för tr, och psudoklassselektor för nth-child som gäller på första raden, och ersätter vad som sagts innan om ojämna rader för just denna raden.  */
+	background-color: black;/* Visar att bakgrundfärgen ska vara svart. */
+}
